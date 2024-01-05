@@ -12,9 +12,9 @@ script_dir = os.getcwd()
 conda_env_path = os.path.join(script_dir, "installer_files", "env")
 
 # Remove the '# ' from the following lines as needed for your AMD GPU on Linux
-# os.environ["ROCM_PATH"] = '/opt/rocm'
-# os.environ["HSA_OVERRIDE_GFX_VERSION"] = '10.3.0'
-# os.environ["HCC_AMDGPU_TARGET"] = 'gfx1030'
+os.environ["ROCM_PATH"] = '/opt/rocm'
+os.environ["HSA_OVERRIDE_GFX_VERSION"] = '10.3.0'
+os.environ["HCC_AMDGPU_TARGET"] = 'gfx1030'
 
 # Command-line flags
 cmd_flags_path = os.path.join(script_dir, "CMD_FLAGS.txt")
